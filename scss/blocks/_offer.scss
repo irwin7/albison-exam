@@ -1,0 +1,86 @@
+.offer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__box {
+    width: 50%;
+  }
+
+  &__imgs {
+    height: 665px;
+    @include bg-cover;
+    background-image: url("../../img/sitting-girl-on-a-laptop.png");
+  }
+
+  &__txts {
+    padding: 0 48px;
+  }
+
+  &__title {
+    margin-bottom: 68px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+    color: #f6f6f8;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      max-width: 150px;
+      width: 100%;
+      height: 2px;
+      background-color: #57d9a6;
+      position: absolute;
+      left: 0%;
+      bottom: -17px;
+    }
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #f6f6f8;
+    margin-bottom: 46px;
+  }
+
+  &__link {
+    @include staticBtn;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .offer {
+    &__box {
+      width: 100%;
+    }
+
+    &__imgs {
+      height: 500px;
+      margin-bottom: 48px;
+    }
+  }
+}
+@media screen and (max-width: 476px) {
+  .offer {
+    &__box {
+      width: 100%;
+    }
+
+    &__imgs {
+      height: 350px;
+      margin-bottom: 48px;
+    }
+
+    &__txts {
+      padding: 0 24px;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 47px;
+    }
+  }
+}

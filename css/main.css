@@ -407,23 +407,22 @@ ul {
   background-color: #1c1c33;
 }
 
-.offer {
-  text-align: center;
-  padding: 8px 0;
-  background-color: #57d9a6;
-}
-.offer-text {
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 27px;
-  color: #1c1c33;
-}
-
 .header {
   padding: 25px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header__offer {
+  text-align: center;
+  padding: 8px 0;
+  background-color: #57d9a6;
+}
+.header__offer-text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  color: #1c1c33;
 }
 .header__logo-link {
   display: inline-block;
@@ -560,11 +559,10 @@ ul {
   }
 }
 @media screen and (max-width: 500px) {
-  .offer-text {
+  .header__offer-text {
     font-size: 14px;
     line-height: 24px;
   }
-
   .header__logo-link {
     z-index: 1;
   }
@@ -993,5 +991,88 @@ ul {
   }
   .featured__item-texts {
     padding-right: 24px;
+  }
+}
+.offer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.offer__box {
+  width: 50%;
+}
+.offer__imgs {
+  height: 665px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../img/sitting-girl-on-a-laptop.png");
+}
+.offer__txts {
+  padding: 0 48px;
+}
+.offer__title {
+  margin-bottom: 68px;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+  color: #f6f6f8;
+  position: relative;
+}
+.offer__title::after {
+  content: "";
+  display: inline-block;
+  max-width: 150px;
+  width: 100%;
+  height: 2px;
+  background-color: #57d9a6;
+  position: absolute;
+  left: 0%;
+  bottom: -17px;
+}
+.offer__desc {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #f6f6f8;
+  margin-bottom: 46px;
+}
+.offer__link {
+  display: inline-block;
+  padding: 16px 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1c1c33;
+  background: #57d9a6;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+.offer__link:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 992px) {
+  .offer__box {
+    width: 100%;
+  }
+  .offer__imgs {
+    height: 500px;
+    margin-bottom: 48px;
+  }
+}
+@media screen and (max-width: 476px) {
+  .offer__box {
+    width: 100%;
+  }
+  .offer__imgs {
+    height: 350px;
+    margin-bottom: 48px;
+  }
+  .offer__txts {
+    padding: 0 24px;
+  }
+  .offer__title {
+    font-size: 36px;
+    line-height: 47px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -10,7 +10,7 @@ elMenuBtn.addEventListener("click", () => {
 // Slick
 
 $('.featured__list').slick({
-    dots: true,
+    dots: false,
     arrows:false,
     infinite: true,
     speed: 300,
