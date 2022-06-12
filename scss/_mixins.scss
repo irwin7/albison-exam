@@ -3,3 +3,28 @@
   margin: 0;
   list-style: none;
 }
+
+@mixin d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin d-flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin n-text {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+@mixin btn {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
