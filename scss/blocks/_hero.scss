@@ -205,7 +205,7 @@
 @media screen and(max-width: 700px) {
   .hero {
     padding: 80px 0;
-    
+
     &__imgs-inner {
       height: 550px;
     }
@@ -232,13 +232,25 @@
 
 @media screen and(max-width: 500px) {
   .hero {
+
+    &__imgs {
+      padding-left: 0;
+    }
+
+    &__layer-lines {
+      width: 200px;
+      height: 100px;
+      top: -40px;
+      left: -28px;
+    }
+
     &__imgs-inner {
-      height: 430px;
+      height: 370px;
     }
 
     &__layer-dots {
       width: 270px;
-      height: 450px;
+      height: 400px;
     }
   }
 }
@@ -259,37 +271,22 @@
       padding-left: 0;
     }
 
-    &__layer-lines {
-      width: 200px;
-      height: 100px;
-      position: absolute;
-      z-index: 0;
-      top: -40px;
-      left: -28px;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-image: url("../../img/hero-bg.svg");
+    &__imgs-inner {
+      height: 340px;
     }
 
-    &__imgs-inner {
-      height: 370px;
+    &__layer-dots {
+        top: -40px;
+      width: 220px;
+      height: 340px;
     }
   }
 }
 @media screen and(max-width: 360px) {
   .hero {
-    &__imgs {
-      padding-left: 0;
-    }
 
     &__imgs-inner {
       height: 280px;
-    }
-
-    &__layer-dots {
-      width: 220px;
-      height: 350px;
     }
   }
 }
