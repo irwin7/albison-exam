@@ -28,3 +28,15 @@
   border: none;
   cursor: pointer;
 }
+
+@mixin bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin bg-contain {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -89,6 +89,11 @@
   &__link {
     @include n-text;
     color: #f6f6f8;
+    transition: all 0.4s ease;
+
+    &:hover{
+      color: #afafaf;
+    }
   }
 }
 
