@@ -1,0 +1,185 @@
+.passion {
+  padding: 144px 0;
+  @include d-flex-between;
+
+  &__imgs {
+    position: relative;
+    width: 615px;
+    height: 535px;
+    padding-right: 48px;
+    padding-bottom: 56px;
+  }
+
+  &__img-layer {
+    position: relative;
+    z-index: 1;
+    width: 515px;
+    height: 515px;
+    border-radius: 999px 32px 999px 999px;
+    overflow: hidden;
+  }
+
+  &__img {
+    height: 535px;
+    filter: drop-shadow(21px 21px 30px rgba(28, 28, 51, 0.4));
+  }
+
+  &__layer-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 185px;
+    height: 165px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../img/passsion-dots-layer.svg");
+  }
+
+  &__layer-lines {
+    position: absolute;
+    right: -16px;
+    bottom: -60px;
+    z-index: 0;
+    width: 500px;
+    height: 375px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../img/passion-blu-and-lines-bg.svg");
+  }
+
+  &__txts {
+    width: 50%;
+    padding-left: 48px;
+  }
+
+  &__title {
+    @include title-2nd;
+  }
+
+  &__desc {
+    font-size: 22px;
+    line-height: 33px;
+    color: #f6f6f8;
+    margin-bottom: 45px;
+  }
+
+  &__btn {
+    @include staticBtn;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .passion {
+    flex-wrap: wrap;
+
+    &__imgs {
+      position: relative;
+      width: 615px;
+      height: 535px;
+      margin-bottom: 92px;
+    }
+
+    &__txts {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .passion {
+    &__imgs {
+      width: 615px;
+      height: 535px;
+      padding-right: 48px;
+      padding-bottom: 0;
+      margin-bottom: 48px;
+    }
+
+    &__img-layer {
+      width: 400px;
+      height: 400px;
+    }
+
+    &__layer-dots {
+      top: -20px;
+      left: -20px;
+      width: 185px;
+      height: 165px;
+    }
+
+    &__layer-lines {
+      right: 0;
+      left: 60px;
+      bottom: 60px;
+      width: 400px;
+      height: 275px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .passion {
+    padding: 100px 0;
+
+    &__imgs {
+      width: 100%;
+      height: 435px;
+      padding-right: 0;
+      padding-bottom: 0;
+      margin-bottom: 48px;
+    }
+
+    &__img {
+      height: 350px;
+    }
+
+    &__img-layer {
+      width: 350px;
+      height: 350px;
+    }
+
+    &__layer-dots {
+      width: 175px;
+      height: 155px;
+    }
+
+    &__layer-lines {
+      bottom: 30px;
+      width: 80%;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .passion {
+    &__imgs {
+      width: 100%;
+      height: 370px;
+      padding-right: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    &__img {
+      height: 330px;
+    }
+
+    &__img-layer {
+      width: 270px;
+      height: 270px;
+    }
+
+    &__layer-dots {
+      width: 145px;
+      height: 125px;
+    }
+
+    &__layer-lines {
+      bottom: 40px;
+      width: 80%;
+      height: 205px;
+    }
+  }
+}
