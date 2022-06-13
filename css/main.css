@@ -1173,6 +1173,9 @@ ul {
 }
 
 @media screen and (max-width: 450px) {
+  .workshop {
+    padding: 100px 0;
+  }
   .workshop__title {
     font-size: 35px;
     line-height: 45px;
@@ -1190,5 +1193,60 @@ ul {
   .workshop__static-title {
     font-size: 20px;
     line-height: 25px;
+  }
+}
+#comments {
+  background-color: #57d9a6;
+}
+
+.comments {
+  padding: 80px 0;
+}
+.comments__list {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.comments__item {
+  width: 100%;
+}
+.comments__rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+.comments__rating__rating-icn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.comments__rating__rating-icn:not(:last-child) {
+  margin-right: 5px;
+}
+.comments__blockquote {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  color: #1c1c33;
+  margin-bottom: 35px;
+}
+.comments__author {
+  font-size: 18px;
+  color: #4e4e65;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .comments__rating__rating-icn {
+    width: 25px;
+    height: 25px;
+  }
+  .comments__blockquote {
+    font-size: 24px;
+    line-height: 34px;
   }
 }/*# sourceMappingURL=main.css.map */
