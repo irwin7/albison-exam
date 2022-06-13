@@ -16,11 +16,7 @@
   }
 
   &__desc {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 33px;
-    color: #4e4e65;
-    margin-bottom: 46px;
+    @include desc;
   }
 
   &__btn {
