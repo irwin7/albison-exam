@@ -1,0 +1,87 @@
+#workshop {
+  background-color: #f5f5f5;
+}
+.workshop {
+  padding: 144px 0;
+
+  &__txts {
+    max-width: 645px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @include title;
+    color: #1c1c33;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    color: #4e4e65;
+    margin-bottom: 46px;
+  }
+
+  &__btn {
+    @include staticBtn;
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    @include d-flex-between;
+  }
+
+  &__item {
+    width: 31%;
+    background-color: #fff;
+    padding: 23px;
+    padding-right: 35px;
+    margin: 0 24px;
+  }
+
+  &__static-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1c1c33;
+  }
+
+  &__comment {
+    @include n-text;
+    color: #4e4e65;
+    margin-top: 12px;
+    margin-bottom: 28px;
+  }
+
+  &__link {
+    @include n-link;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .workshop {
+
+    &__title {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 35px;
+    }
+
+    &__desc {
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 25px;
+    }
+
+    &__item {
+      padding-right: 23px;
+      margin: 0 1px;
+    }
+
+    &__static-title {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+}

@@ -22,6 +22,20 @@
   line-height: 27px;
 }
 
+@mixin n-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #57d9a6;
+  transition: all 0.4s ease;
+
+  &:hover {
+    color: #28f1a1;
+  }
+}
+
 @mixin btn {
   display: inline-block;
   background-color: transparent;

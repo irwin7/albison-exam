@@ -76,44 +76,34 @@
   }
 
   &__link {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #57d9a6;
-    transition: all 0.4s ease;
-
-    &:hover {
-      color: #28f1a1;
-    }
+    @include n-link;
   }
 
-  .slick {
-    &-dots {
-      display: flex;
-      justify-content: center;
-      padding-top: 50px;
+}
+.slick {
+  &-dots {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
 
-      li {
-        &:not(:last-child) {
-          margin-right: 10px;
-        }
+    li {
+      &:not(:last-child) {
+        margin-right: 10px;
       }
+    }
 
+    button {
+      @include btn;
+      width: 18px;
+      height: 18px;
+      font-size: 0;
+      background-color: #555;
+      border-radius: 50%;
+    }
+
+    .slick-active {
       button {
-        @include btn;
-        width: 18px;
-        height: 18px;
-        font-size: 0;
-        background-color: #555;
-        border-radius: 50%;
-      }
-
-      .slick-active {
-        button {
-          background-color: #333;
-        }
+        background-color: #333;
       }
     }
   }
