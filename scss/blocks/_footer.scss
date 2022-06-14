@@ -1,8 +1,10 @@
 #footer {
+  padding-bottom: 144px;
 }
 .contact {
   width: 100%;
   background-color: #57d9a6;
+  padding: 0 20px;
   padding-top: 80px;
   padding-bottom: 100px;
   border-radius: 4px;
@@ -63,55 +65,134 @@
 }
 .footer {
   &__logo-box {
-  }
-
-  &__logo-link {
+    margin-bottom: 80px;
   }
 
   &__logo {
+    width: 135px;
+    height: 45px;
   }
 
   &__list {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__item {
+    &:not(:last-child) {
+      margin-right: 160px;
+      margin-bottom: 48px;
+    }
   }
 
   &__title {
-  }
-
-  &__navig {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f6f6f8;
+    margin-bottom: 25px;
   }
 
   &__navig-item {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
   }
 
   &__navig-link {
+    font-size: 18px;
+    line-height: 27px;
+    color: #f6f6f8;
+    transition: all 0.4s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }
 .fsocial {
   &__title {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f6f6f8;
+    margin-bottom: 25px;
   }
 
   &__list {
+    display: flex;
+	flex-wrap: wrap;
   }
 
   &__item {
+    &:not(:last-child) {
+      margin-right: 15px;
+	  margin-bottom: 15px;
+    }
   }
 
   &__link {
+    @include d-flex-center;
+    width: 48px;
+    height: 48px;
+    color: #1c1c33;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: #f6f6f8;
     font-size: 32px;
+    transition: all 0.4s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }
-.bx {
+
+@media screen and (max-width: 700px) {
+  .contact {
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    &__text {
+      font-size: 30px;
+      line-height: 35px;
+      margin-bottom: 35px;
+    }
+
+    &__form {
+      flex-wrap: wrap;
+    }
+
+    &__input {
+      height: 50px;
+      padding: 5px 10px;
+      padding-bottom: 10px;
+      margin-right: 0;
+      margin-bottom: 16px;
+
+      &::placeholder {
+        font-size: 16px;
+        line-height: 53px;
+      }
+    }
+
+    &__btn {
+      width: 100%;
+      padding: 0 24px;
+      font-size: 16px;
+      line-height: 40px;
+    }
+  }
 }
-.bxl-tiktok {
-}
-.bxl-instagram {
-}
-.bxl-youtube {
-}
-.bxl-facebook {
-}
-.bxl-twitter {
+@media screen and (max-width: 500px) {
+  .footer {
+    &__item {
+      &:not(:last-child) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
 }
