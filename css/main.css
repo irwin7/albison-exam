@@ -1440,7 +1440,7 @@ ul {
 
 .articles {
   padding-top: 144px;
-  padding-bottom: 100px;
+  padding-bottom: 300px;
 }
 .articles__txts {
   max-width: 685px;
@@ -1575,14 +1575,24 @@ ul {
   color: #1c1c33;
 }
 .contact__btn {
-  padding: 5px 24px;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px 24px;
   background: #1c1c33;
   border-radius: 4px;
   font-weight: 700;
   font-size: 20px;
   line-height: 53px;
   color: #57d9a6;
+  border: 2px solid #1c1c33;
   cursor: pointer;
+  transition: all 0.4s ease;
+}
+.contact__btn:hover {
+  color: #1c1c33;
+  background-color: transparent;
 }
 
 .fsocial__link {
